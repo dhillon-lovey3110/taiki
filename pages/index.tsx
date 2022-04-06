@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Layout from '../components/Layouts/Layout';
 import Meta from '../components/Layouts/Meta';
 import Accordion from '../components/accordion/accordion';
@@ -6,6 +6,23 @@ import NFTS from '../components/accordion/showNfts';
 
 const header = () => {
     const [playerActive,setPlayerActive] = useState(false);
+    const [audio, setAudio] = useState(null)
+    
+    useEffect(() => {
+      setAudio(new Audio('/assets/music/coldplay-sparks.mp3'));
+    // only run once on the first render on the client
+    }, [])
+
+    const handlePlayer = () => {
+      console.log(playerActive);
+      if(playerActive==false){
+        audio.play();
+      }else{
+        audio.currentTime = 0;
+        audio.pause();
+      }
+      setPlayerActive(!playerActive);
+    }
 
     return <>
       <div className='mx-auto max-w-7xl relative px-4'>
@@ -14,10 +31,10 @@ const header = () => {
         <p className='text-center mb-8'><a className='bg-white text-black text-2xl rounded-full inline-block px-8 py-3 mb-3 cursor-pointer relative z-20'><img src="/assets/images/discord-join.png" className='inline-block' alt="" /></a></p>
         <p className='font-agradir text-lg text-center max-w-sm mx-auto font-thin text-gray-400 pb-24 relative z-20'>Launch Date: Around May 2022</p>
         <div className='hidden md:block absolute bottom-0 right-0 z-10'>
-           <img src="/assets/images/books_and_light.png" alt="books and light" className='w-full' />
+           <img src="/assets/images/books_and_light.svg" alt="books and light" className='w-full' />
         </div>
         <div className='hidden md:block absolute bottom-0 left-0 z-10'>
-            <p className='absolute bottom-5 right-16 font-semibold text-sm'><a onClick={() => {setPlayerActive(true)}} className={playerActive?'mr-2 cursor-pointer':'mr-2 cursor-pointer text-gray-500'}>ON</a><a onClick={() => {setPlayerActive(false)}} className={playerActive?'cursor-pointer text-gray-500':'cursor-pointer'}>OFF</a></p>
+            <p className='absolute bottom-5 right-16 font-semibold text-sm'><a onClick={handlePlayer} className={playerActive?'mr-2 cursor-pointer':'mr-2 cursor-pointer text-gray-500'}>ON</a><a onClick={handlePlayer}   className={playerActive?'cursor-pointer text-gray-500':'cursor-pointer'}>OFF</a></p>
            <img src="/assets/images/music_player.png" alt="books and light" className='w-full' />
         </div>
       </div>
@@ -104,14 +121,16 @@ const currentHolders = () => {
           <img src="/assets/images/more-perks.png" alt=""  />
         </div>
         <p className='text-base text-center text-dark mb-20'>Stay updated via our Discord.</p>
-        <img src="/assets/images/nfts.png" alt='' />
+        <div className='overflow-hidden'>
+          <img src="/assets/images/nfts.png" className='h-96 lg:h-full object-cover mx-auto' alt='' />
+        </div>
       </div>
   </>;
 }
 
 const taikiMap = () => {
   return <>
-    <div className='mx-auto max-w-7xl mt-36 relative px-4'>
+      <div className='mx-auto max-w-7xl mt-36 relative px-4'>
         <div className='max-w-sm mx-auto mb-7'>
           <img src="/assets/images/taiki-map.png" alt=""  />
         </div>
@@ -129,7 +148,7 @@ const taikiMap = () => {
           </div>
         </div>
       </div>
-      <div className='mx-auto max-w-5xl relative mt-10 mb-12 px-4'>
+      <div className='mx-auto max-w-7xl relative mt-10 mb-12 px-4'>
         <div className='flex flex-col items-center md:justify-center gap-10 md:flex-row'>
           <div className='flex-grow-1 max-w-md content-center bg-darkRed rounded-2xl relative overflow-hidden'>
             <img src='/assets/images/online-taiki.png' className='p-8 w-full' alt='' />

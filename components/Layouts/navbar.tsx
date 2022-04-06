@@ -5,11 +5,12 @@ const Navbar = () => {
     const [active, setActive] = useState(false);
     const handleClick = () => {
         setActive(!active);
+        console.log(active);
     };
 
     return <>
         <nav className='flex items-center flex-wrap bg-green-400 p-3 '>
-            <button onClick={handleClick} className=' inline-flex p-3 hover:bg-gray-900 rounded lg:hidden text-white ml-auto hover:text-white outline-none'>
+            <button onClick={handleClick} className='inline-flex p-3 hover:bg-gray-900 rounded md:hidden text-white ml-auto hover:text-white outline-none'>
             <svg
                 className='w-6 h-6'
                 fill='none'
@@ -25,18 +26,19 @@ const Navbar = () => {
                 />
             </svg>
             </button>
-            <div className='hidden w-full md:hidden'>
-            <div className='md:hidden w-full lg:items-center items-start flex flex-col lg:h-auto'>
-                {menuLinks.map( (v,i) => {
-                    return <>
-                        <Link href={v.url}>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-600 hover:text-white '>
-                                {v.title}
-                            </a>
-                        </Link>
-                    </>;
-                })}
-            </div>
+            <div className='w-full md:hidden'>
+                {active}
+                <div className={active?'absolute w-full lg:items-center items-start flex flex-col lg:h-auto right-0 z-20 pt-10':'hidden'}>
+                    {menuLinks.map( (v,i) => {
+                        return <div key={'mobile-link-'+i} className="w-full px-5 py-3 bg-black">
+                            <Link href={v.url}>
+                                <a className='text-dark font-bold hover:text-white '>
+                                    {v.title}
+                                </a>
+                            </Link>
+                        </div>;
+                    })}
+                </div>
             </div>
         </nav>
     </>;
@@ -61,4 +63,12 @@ const menuLinks = [
     },
 ];
 
-export { Navbar, menuLinks };
+const walletLinks = [
+    {
+        title:'wallet',
+        action:'',
+        image:'/assets/images/wallet.png'
+    }
+];
+
+export { Navbar, menuLinks, walletLinks };

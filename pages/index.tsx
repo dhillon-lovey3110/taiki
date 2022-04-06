@@ -10,13 +10,13 @@ const header = () => {
     return <>
       <div className='mx-auto max-w-7xl relative px-4'>
         <img src="/assets/images/taiki.png" className='mx-auto mb-16' alt="Taiki" />
-        <p className='font-agradir text-xl text-center max-w-sm mx-auto font-thin text-gray-400 mb-12'>Your friendly NFT collection for shiba inu lovers and lofi hip-hop enthusiasts.</p>
-        <p className='text-center mb-8'><a className='bg-white text-black text-2xl rounded-full inline-block px-8 py-3 mb-3 cursor-pointer'><img src="/assets/images/discord-join.png" className='inline-block' alt="" /></a></p>
-        <p className='font-agradir text-lg text-center max-w-sm mx-auto font-thin text-gray-400 pb-24'>Launch Date: Around May 2022</p>
-        <div className='absolute bottom-0 right-0'>
+        <p className='font-agradir text-xl text-center max-w-sm mx-auto font-thin text-gray-400 mb-12 relative z-20'>Your friendly NFT collection for shiba inu lovers and lofi hip-hop enthusiasts.</p>
+        <p className='text-center mb-8'><a className='bg-white text-black text-2xl rounded-full inline-block px-8 py-3 mb-3 cursor-pointer relative z-20'><img src="/assets/images/discord-join.png" className='inline-block' alt="" /></a></p>
+        <p className='font-agradir text-lg text-center max-w-sm mx-auto font-thin text-gray-400 pb-24 relative z-20'>Launch Date: Around May 2022</p>
+        <div className='hidden md:block absolute bottom-0 right-0 z-10'>
            <img src="/assets/images/books_and_light.png" alt="books and light" className='w-full' />
         </div>
-        <div className='absolute bottom-0 left-0'>
+        <div className='hidden md:block absolute bottom-0 left-0 z-10'>
             <p className='absolute bottom-5 right-16 font-semibold text-sm'><a onClick={() => {setPlayerActive(true)}} className={playerActive?'mr-2 cursor-pointer':'mr-2 cursor-pointer text-gray-500'}>ON</a><a onClick={() => {setPlayerActive(false)}} className={playerActive?'cursor-pointer text-gray-500':'cursor-pointer'}>OFF</a></p>
            <img src="/assets/images/music_player.png" alt="books and light" className='w-full' />
         </div>

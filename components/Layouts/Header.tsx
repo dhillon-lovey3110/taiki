@@ -1,4 +1,4 @@
-import { Navbar, menuLinks } from "./navbar";
+import { Navbar, menuLinks, walletLinks } from "./navbar";
 export default function Header() {
   return (
     <>
@@ -13,15 +13,19 @@ export default function Header() {
               <div className="hidden md:flex md:flex-row md:flex-grow-1 px-5">
                   <ul className="inline-flex gap-7 text-gray-500">
                     {menuLinks.map( (v,i) => {
-                      return <>
+                      return <div key={'desk-link-'+i} className="flex flex-row gap-8">
                         <li className="cursor-pointer hover:text-gray-100">{v.title}</li>
-                        {(i!=menuLinks.length-1)&&<li className="hidden md:block">/</li>}
-                      </>;
+                        {(i!=menuLinks.length-1)&&<li className="">/</li>}
+                      </div>;
                     })}
                   </ul>
               </div>
               <div className="hidden md:flex md:flex-row md:flex-shrink-0">
-                <img src="/assets/images/wallet.png" alt="" className="cursor-pointer" />
+                {walletLinks.map( (v,i) => {
+                  return <div key={"wallet-"+i} >
+                    {v.image!=''&&<img src={v.image} alt={v.title} className="cursor-pointer" />}
+                  </div>;
+                } )}
               </div>
           </div>
         </div>

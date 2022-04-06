@@ -8,7 +8,7 @@ const header = () => {
     const [playerActive,setPlayerActive] = useState(false);
 
     return <>
-      <div className='mx-auto max-w-7xl relative'>
+      <div className='mx-auto max-w-7xl relative px-4'>
         <img src="/assets/images/taiki.png" className='mx-auto mb-16' alt="Taiki" />
         <p className='font-agradir text-xl text-center max-w-sm mx-auto font-thin text-gray-400 mb-12'>Your friendly NFT collection for shiba inu lovers and lofi hip-hop enthusiasts.</p>
         <p className='text-center mb-8'><a className='bg-white text-black text-2xl rounded-full inline-block px-8 py-3 mb-3 cursor-pointer'><img src="/assets/images/discord-join.png" className='inline-block' alt="" /></a></p>
@@ -35,8 +35,8 @@ const header = () => {
 
 const funCollection = () => {
   return <>
-    <div className='mx-auto max-w-5xl relative'>
-        <div className='flex flex-row justify-center py-16'>
+    <div className='mx-auto max-w-5xl relative px-4'>
+        <div className='flex flex-col items-center py-16 md:flex-row md:justify-center'>
           <div className='flex-grow-1 p-10 content-center'>
             <img src='/assets/images/fun-collection.png' alt='' />
           </div>
@@ -46,8 +46,8 @@ const funCollection = () => {
         </div>
       </div>
 
-      <div className='mx-auto max-w-5xl relative mb-16'>
-        <div className='flex flex-row justify-center gap-10'>
+      <div className='mx-auto max-w-5xl relative mb-16 px-4'>
+        <div className='flex flex-col items-center gap-10 md:flex-row md:justify-center'>
           <div className='flex-grow-1 max-w-md content-center bg-gray-800 rounded-2xl'>
             <img src='/assets/images/7777-friends.png' className='p-8 h-56' alt='' />
             <p className='px-8 text-sm mb-5 text-dark'>Open your shiba basket to reveal a random combination of head traits, face traits, expressions, body traits, and backgrounds. Who knows what kind of friend you’ll get?</p>
@@ -60,8 +60,8 @@ const funCollection = () => {
           </div>
         </div>
       </div>
-      <div className='mx-auto max-w-5xl relative mb-12'>
-        <div className='flex flex-row justify-center gap-10'>
+      <div className='mx-auto max-w-5xl relative mb-12 px-4'>
+        <div className='flex flex-col items-center gap-10 md:flex-row md:justify-center'>
           <div className='flex-grow-1 max-w-md content-center bg-gray-800 rounded-2xl'>
             <img src='/assets/images/animal-charity.png' className='p-8 h-40' alt='' />
             <p className='px-8 text-sm mb-5 text-dark'>Giving is a core part of our project. We plan to donate a percentage of our mint to help animal charities and charities that resonate with us and the community.</p>
@@ -79,12 +79,12 @@ const funCollection = () => {
 
 const currentHolders = () => {
   return <>
-      <div className='mx-auto max-w-7xl mt-36 relative'>
+      <div className='mx-auto max-w-7xl mt-36 relative px-4'>
         <div className='max-w-2xl mx-auto mb-7'>
           <img src="/assets/images/current-holder-perks.png" alt="" />
         </div>
         <p className='text-base text-center text-dark mb-10'>Amazing perks for planned for our holders.</p>
-        <div className='flex flex-row gap-10'>
+        <div className='flex flex-col gap-10 md:flex-row'>
             <div className='bg-gray-800 p-10 flex-1 rounded-2xl'>
               <img src="/assets/images/giveaways.png" alt='' className='mb-5 w-96' />
               <p className='text-dark'>Access weekly whitelist giveaways through our holder’s Discord channel.</p>
@@ -99,7 +99,7 @@ const currentHolders = () => {
             </div>
         </div>
       </div>
-      <div className='mx-auto max-w-7xl mt-36 relative'>
+      <div className='mx-auto max-w-7xl mt-36 relative px-4'>
         <div className='max-w-sm mx-auto mb-7'>
           <img src="/assets/images/more-perks.png" alt=""  />
         </div>
@@ -111,26 +111,26 @@ const currentHolders = () => {
 
 const taikiMap = () => {
   return <>
-    <div className='mx-auto max-w-7xl mt-36 relative'>
+    <div className='mx-auto max-w-7xl mt-36 relative px-4'>
         <div className='max-w-sm mx-auto mb-7'>
           <img src="/assets/images/taiki-map.png" alt=""  />
         </div>
         <p className='text-base text-center text-dark mb-20'>The current tentative roadmap for Taiki Friends.</p>
-        <div className='flex flex-row justify-center gap-10'>
+        <div className='flex flex-col items-center md:justify-center gap-10 md:flex-row'>
           <div className='flex-grow-1 max-w-md content-center bg-darkBlue rounded-2xl relative overflow-hidden'>
             <img src='/assets/images/x-percent.png' className='p-8 w-full' alt='' />
             <p className='px-8 text-sm mb-5 text-dark relative z-10'>After launch, a large sum of our mint capital will be refinanced back into our project to fund the future development of our roadmap.</p>
             <img src='/assets/images/dollar-sign.png' className='absolute right-0 bottom-0 w-[75px]' alt='' />
           </div>
           <div className='flex-grow-1 max-w-md content-center bg-darkGreen rounded-2xl relative overflow-hidden'>
-            <img src='/assets/images/unlimited-points.png' className='p-8 w-full' alt='' />
+            <img src='/assets/images/unlimited-points.png' className='p-8 mb-0 w-full' alt='' />
             <p className='px-8 text-sm mb-5 text-dark relative z-10'>Let the games begin! Collect Taiki points to win rewards such as ultra-rare Taikis, Taiki-themed isometric web3 rooms, and so much more!</p>
             <img src='/assets/images/numbers.png' className='absolute right-0 bottom-0 w-[75px]' alt='' />
           </div>
         </div>
       </div>
-      <div className='mx-auto max-w-5xl relative mt-12 mb-12'>
-        <div className='flex flex-row justify-center gap-10'>
+      <div className='mx-auto max-w-5xl relative mt-10 mb-12 px-4'>
+        <div className='flex flex-col items-center md:justify-center gap-10 md:flex-row'>
           <div className='flex-grow-1 max-w-md content-center bg-darkRed rounded-2xl relative overflow-hidden'>
             <img src='/assets/images/online-taiki.png' className='p-8 w-full' alt='' />
             <p className='px-8 text-sm mb-5 text-dark'>Bring back the nostalgia. Take care of your Taiki in his virtual tamagotchi space. Feed him lollipops, play catch, give him a shower. Trade items with others.</p>
@@ -149,7 +149,7 @@ const taikiMap = () => {
 
 const faq = () => {
   return <>
-    <div className='mx-auto max-w-7xl mt-36 relative'>
+    <div className='mx-auto max-w-7xl mt-36 relative px-5'>
       <div className='max-w-2xl mx-auto mb-32'>
         <img src="/assets/images/faq.png" alt=""  />
       </div>
@@ -168,25 +168,25 @@ const faq = () => {
 
 const teamTaiki = () => {
   return <>
-    <div className='mx-auto max-w-7xl mt-36 relative'>
+    <div className='mx-auto max-w-7xl mt-36 relative px-4'>
         <div className='max-w-sm mx-auto mb-20'>
           <img src="/assets/images/team-taiki.png" alt=""  />
         </div>
-        <div className='flex flex-row justify-center gap-10'>
+        <div className='flex flex-col items-center md:justify-center gap-10 md:flex-row'>
           <div>
-            <img src="/assets/images/acornzzi.png" alt='' />
+            <img src="/assets/images/acornzzi.png" className='h-56 md:h-full' alt='' />
             <p className='text-base text-center text-dark mt-3'>Artist</p>
           </div>
           <div>
-            <img src="/assets/images/fr1nge.png" alt='' />
+            <img src="/assets/images/fr1nge.png" className='h-56 md:h-full' alt='' />
             <p className='text-base text-center text-dark mt-3'>Founder</p>
           </div>
           <div>
-            <img src="/assets/images/kazi.png" alt='' />
+            <img src="/assets/images/kazi.png" className='h-56 md:h-full' alt='' />
             <p className='text-base text-center text-dark mt-3'>Digital Designer/Product</p>
           </div>
           <div>
-            <img src="/assets/images/leon.png" alt='' />
+            <img src="/assets/images/leon.png" className='h-56 md:h-full' alt='' />
             <p className='text-base text-center text-dark mt-3'>Management</p>
           </div>
         </div>
@@ -196,7 +196,7 @@ const teamTaiki = () => {
 
 const hangWithUs = () => {
   return <>
-    <div className='mx-auto max-w-7xl mt-36 relative'>
+    <div className='mx-auto max-w-7xl mt-36 relative px-4'>
         <div className='max-w-xl mx-auto mb-8'>
           <img src="/assets/images/hang-with-us.png" alt=""  />
         </div>

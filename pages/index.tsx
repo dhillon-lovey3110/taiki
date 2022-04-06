@@ -3,10 +3,14 @@ import Layout from '../components/Layouts/Layout';
 import Meta from '../components/Layouts/Meta';
 import Accordion from '../components/accordion/accordion';
 import NFTS from '../components/accordion/showNfts';
+import ImageSlide from '../components/imageSlide';
+import { motion } from 'framer-motion';
 
 const header = () => {
     const [playerActive,setPlayerActive] = useState(false);
     const [audio, setAudio] = useState(null)
+    const [lamp, setLamp] = useState('/assets/images/books_and_light.svg');
+    const [lampPower, setLampPower] = useState(false);
     
     useEffect(() => {
       setAudio(new Audio('/assets/music/coldplay-sparks.mp3'));
@@ -14,7 +18,6 @@ const header = () => {
     }, [])
 
     const handlePlayer = () => {
-      console.log(playerActive);
       if(playerActive==false){
         audio.play();
       }else{
@@ -24,28 +27,37 @@ const header = () => {
       setPlayerActive(!playerActive);
     }
 
+    const handleLamp = () => {
+      setLamp('/assets/images/books_and_light2.svg');
+      if(lampPower){
+        setTimeout(function(){
+          setLamp('/assets/images/books_and_light.svg');
+        },500)
+      }else{
+        setTimeout(function(){
+          setLamp('/assets/images/books_and_light3.svg');
+        },500)
+      }
+      setLampPower(!lampPower);
+    }
+
     return <>
       <div className='mx-auto max-w-7xl relative px-4'>
         <img src="/assets/images/taiki.png" className='mx-auto mb-16' alt="Taiki" />
         <p className='font-agradir text-xl text-center max-w-sm mx-auto font-thin text-gray-400 mb-12 relative z-20'>Your friendly NFT collection for shiba inu lovers and lofi hip-hop enthusiasts.</p>
-        <p className='text-center mb-8'><a className='bg-white text-black text-2xl rounded-full inline-block px-8 py-3 mb-3 cursor-pointer relative z-20'><img src="/assets/images/discord-join.png" className='inline-block' alt="" /></a></p>
+        <p className='text-center mb-8'><a className='text-black text-2xl rounded-full inline-block px-8 py-3 mb-3 cursor-pointer relative z-20'><img src="/assets/images/discord-join.png" className='inline-block' alt="" /></a></p>
         <p className='font-agradir text-lg text-center max-w-sm mx-auto font-thin text-gray-400 pb-24 relative z-20'>Launch Date: Around May 2022</p>
-        <div className='hidden md:block absolute bottom-0 right-0 z-10'>
-           <img src="/assets/images/books_and_light.svg" alt="books and light" className='w-full' />
+        <div className='hidden md:block absolute bottom-0 right-0 z-10' onClick={handleLamp}>
+           <img src={lamp} alt="books and light" className='w-full' />
+           <div className='bg-transparent cursor-pointer rounded-full h-5 w-5 absolute right-[38px] top-[165px]'></div>
         </div>
         <div className='hidden md:block absolute bottom-0 left-0 z-10'>
             <p className='absolute bottom-5 right-16 font-semibold text-sm'><a onClick={handlePlayer} className={playerActive?'mr-2 cursor-pointer':'mr-2 cursor-pointer text-gray-500'}>ON</a><a onClick={handlePlayer}   className={playerActive?'cursor-pointer text-gray-500':'cursor-pointer'}>OFF</a></p>
-           <img src="/assets/images/music_player.png" alt="books and light" className='w-full' />
+            <img src="/assets/images/music_player.png" alt="books and light" className='w-full' />
         </div>
       </div>
       <div className='border-b-8 border-b-dark mb-2'></div>
-      <ul className=''>
-        <NFTS url="/assets/images/nfts/2.png" />
-        <NFTS url="/assets/images/nfts/4.png" />
-        <NFTS url="/assets/images/nfts/36.png" />
-        <NFTS url="/assets/images/nfts/37.png" />
-        <NFTS url="/assets/images/nfts/244.png" />
-      </ul>
+      <NFTS />
       <div className='border-b-8 border-b-dark'></div>
     </>;
 }
@@ -121,9 +133,7 @@ const currentHolders = () => {
           <img src="/assets/images/more-perks.png" alt=""  />
         </div>
         <p className='text-base text-center text-dark mb-20'>Stay updated via our Discord.</p>
-        <div className='overflow-hidden'>
-          <img src="/assets/images/nfts.png" className='h-96 lg:h-full object-cover mx-auto' alt='' />
-        </div>
+        <ImageSlide />
       </div>
   </>;
 }

@@ -47,19 +47,19 @@ const Navbar = () => {
 const menuLinks = [
     {
         title:'What is Taiki Friends?',
-        url:''
+        url:'/'
     },
     {
         title:'Taiki Map',
-        url:''
+        url:'/'
     },
     {
         title:'FAQ',
-        url:''
+        url:'/'
     },
     {
         title:'Taiki Team',
-        url:''
+        url:'/'
     },
 ];
 

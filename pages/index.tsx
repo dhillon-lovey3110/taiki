@@ -215,7 +215,7 @@ const HomePage = () => (
       description="Taiki Non Fungible tokens"
     />
   }>
-    {/* {header()} */}
+    {header()}
     {funCollection()}
     {currentHolders()}
     {taikiMap()}

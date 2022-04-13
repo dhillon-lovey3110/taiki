@@ -8,3 +8,30 @@
       //font-family: Proxima Nova, system-ui, sans-serif;
     }
 }
+
+.super-rare{
+  background: #865FCB;
+  background: -webkit-linear-gradient(to right, #865FCB 0%, #D00061 100%);
+  background: -moz-linear-gradient(to right, #865FCB 0%, #D00061 100%);
+  background: linear-gradient(to right, #865FCB 0%, #D00061 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animal-charity{
+  background: #4575EC;
+  background: -webkit-linear-gradient(to right, #4575EC 0%, #00F5D8 100%);
+  background: -moz-linear-gradient(to right, #4575EC 0%, #00F5D8 100%);
+  background: linear-gradient(to right, #4575EC 0%, #00F5D8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cool-exclusive{
+  background: #FFEB34;
+  background: -webkit-linear-gradient(to right, #FFEB34 0%, #FFB345 100%);
+  background: -moz-linear-gradient(to right, #FFEB34 0%, #FFB345 100%);
+  background: linear-gradient(to right, #FFEB34 0%, #FFB345 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

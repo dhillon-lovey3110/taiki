@@ -1,34 +1,35 @@
-import {useState } from 'react';
+import React,{useState } from 'react';
 import { motion } from 'framer-motion';
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ImageSlide = () => {
-    const marqueeVariants = {
-        animate: {
-          x: [0, -1290],
-          transition: {
-            x: {
-              repeat: Infinity,
-              repeatType: "loop",
-              duration: 100,
-              ease: "linear",
-            },
-          },
-        },
+    let settings = {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 50000,
+      pauseOnHover: false,
+      cssEase: 'linear',
+      infinite: true,
+      prevArrow: null,
+      arrows : false,
     };
-
-    return <>
-        <div className='overflow-hidden'>
-          <motion.div variants={marqueeVariants} animate="animate">
-            <div className='flex flex-row gap-10'>
-                <img src="/assets/images/nfts.png" className='object-contain mx-auto' alt='' />
-                <img src="/assets/images/nfts.png" className='object-contain mx-auto' alt='' />
-                <img src="/assets/images/nfts.png" className='object-contain mx-auto' alt='' />
-                <img src="/assets/images/nfts.png" className='object-contain mx-auto' alt='' />
-                <img src="/assets/images/nfts.png" className='object-contain mx-auto' alt='' />
-            </div>
-          </motion.div>
-        </div>
-    </>;
+    return (
+      <div className='bg-black'>
+        <Slider {...settings}>
+          <div>
+            <img src="/assets/images/nfts.png" className='pr-0' alt='' />
+          </div>
+          <div>
+            <img src="/assets/images/nfts.png" className='pr-0' alt='' />
+          </div>
+        </Slider>
+      </div>
+    );
 }
 
 export default ImageSlide;

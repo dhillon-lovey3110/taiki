@@ -72,8 +72,9 @@ module.exports = {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
-      agradir: ['agrandirregular'],
-      agradirBold: ['agrandirtext_bold']
+      ppagradir: ['pp_agrandirregular'],
+      ppagradirBold: ['pp_agrandirgrand_heavy'],
+      ppagradirNarrow: ['pp_agrandirnarrow_regular'],
     },
     extend: {
       backgroundImage: {

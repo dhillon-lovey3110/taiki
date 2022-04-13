@@ -45,7 +45,7 @@ const header = () => {
       <div className='mx-auto max-w-7xl relative px-4'>
         <img src="/logo.svg" className='mx-auto mb-16' alt="Taiki" />
         <p className='font-ppagradir text-[21px] text-center max-w-sm mx-auto font-thin text-gray-400 mb-12 relative z-20'>Your friendly NFT collection for shiba inu lovers and lofi hip-hop enthusiasts.</p>
-        <p className='text-center mb-8'><a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer leading-8 hover:transition-all hover:duration-500 hover:scale-110"><img src="/assets/images/discord-black.svg" alt="" className="mr-3" />Join the Discord</a></p>
+        <p className='text-center mb-8'><a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer font-ppagradir leading-8 hover:transition-all hover:duration-500 hover:scale-110"><img src="/assets/images/discord-black.svg" alt="" className="mr-3" />Join the Discord</a></p>
         <p className='font-ppagradir text-[18px] text-center max-w-sm mx-auto font-thin text-gray-400 pb-24 relative z-20'>Launch Date: Around May 2022</p>
         <div className='hidden md:block absolute bottom-0 right-0 z-10' onClick={handleLamp}>
            <img src={lamp} alt="books and light" className='w-full' />
@@ -273,7 +273,7 @@ const hangWithUs = () => {
         <div className='max-w-lg text-center text-xl mx-auto text-dark leading-10 mb-8'>
           Liking what you’re seeing so far? Join us on our Discord where you can chat with us and other members.
         </div>
-        <p className='text-center mb-48'><a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer leading-8 hover:transition-all hover:duration-500 hover:scale-110"><img src="/assets/images/discord-black.svg" alt="" className="mr-3" />Join the Discord</a></p>
+        <p className='text-center mb-48'><a className="bg-white inline-flex text-black px-5 py-3 rounded-full font-ppagradir cursor-pointer leading-8 hover:transition-all hover:duration-500 hover:scale-110"><img src="/assets/images/discord-black.svg" alt="" className="mr-3" />Join the Discord</a></p>
       </div>
   </>;
 }

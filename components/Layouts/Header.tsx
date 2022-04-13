@@ -23,7 +23,7 @@ export default function Header() {
               <div className="hidden md:flex md:flex-row md:flex-shrink-0">
                 {walletLinks.map( (v,i) => {
                   return <div key={"wallet-"+i} >
-                    <a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer leading-8 hover:transition-all hover:duration-500 hover:scale-110"><img src="/assets/images/wallet-black.svg" alt="" className="mr-3" />Connect wallet</a>
+                    <a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer font-ppagradir leading-8 hover:transition-all hover:duration-500 hover:scale-110"><img src="/assets/images/wallet-black.svg" alt="" className="mr-3" />Connect wallet</a>
                   </div>;
                 } )}
               </div>

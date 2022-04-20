@@ -169,14 +169,14 @@ const taikiMap = () => {
         <div className='max-w-3xl mx-auto mb-7'>
           <p className='font-ppagradirBold text-[46px] text-center'>The Taiki Map</p>
         </div>
-        <p className='text-base text-center text-dark mb-14 font-ppagradir text-[21px]'>The current tentative roadmap for Taiki Friends.</p>
+        <p className='text-base text-center font-ppagradir text-dark mb-14 font-ppagradir text-[21px]'>The current tentative roadmap for Taiki Friends.</p>
         <div className='flex flex-col items-center md:justify-center gap-10 md:flex-row mb-10'>
           <div className='flex-grow-1 max-w-md content-center bg-darkBlue rounded-2xl relative overflow-hidden'>
             <div className='bg-[#334C85] p-5 m-8 rounded-2xl flex gap-7 align-middle'>
               <div className='bg-darkBlue h-16 w-16 text-center pt-2 text-[32px] rounded-full font-ppagradirBold flex-shrink-0'>1</div>
               <div className='font-ppagradirBold text-[20px]'>X% of Mint Back into the Project</div>
             </div>
-            <p className='px-8 text-sm mb-5 text-dark relative z-10'>After launch, a large sum of our mint capital will be refinanced back into our project to fund the future development of our roadmap.</p>
+            <p className='px-8 text-sm mb-5 font-ppagradir text-dark relative z-10'>After launch, a large sum of our mint capital will be refinanced back into our project to fund the future development of our roadmap.</p>
             <img src='/assets/images/dollar-sign.png' className='absolute right-0 bottom-0 w-[75px]' alt='' />
           </div>
           <div className='flex-grow-1 max-w-md content-center bg-darkGreen rounded-2xl relative overflow-hidden'>
@@ -184,7 +184,7 @@ const taikiMap = () => {
               <div className='bg-[#00772E] h-16 w-16 text-center pt-2 text-[32px] rounded-full font-ppagradirBold flex-shrink-0'>2</div>
               <div className='font-ppagradirBold text-[20px]'>Untitled Points- Based Game</div>
             </div>
-            <p className='px-8 text-sm mb-5 text-dark relative z-10'>Let the games begin! Collect Taiki points to win rewards such as ultra-rare Taikis, Taiki-themed isometric web3 rooms, and so much more!</p>
+            <p className='px-8 text-sm mb-5 font-ppagradir text-dark relative z-10'>Let the games begin! Collect Taiki points to win rewards such as ultra-rare Taikis, Taiki-themed isometric web3 rooms, and so much more!</p>
             <img src='/assets/images/numbers.png' className='absolute right-0 bottom-0 w-[75px]' alt='' />
           </div>
         </div>
@@ -196,7 +196,7 @@ const taikiMap = () => {
               <div className='bg-[#9B1724] h-16 w-16 text-center pt-2 text-[32px] rounded-full font-ppagradirBold flex-shrink-0'>3</div>
               <div className='font-ppagradirBold text-[20px]'>Online Taiki Tamagotchi</div>
             </div>
-            <p className='px-8 text-sm mb-5 text-dark relative z-10'>After launch, a large sum of our mint capital will be refinanced back into our project to fund the future development of our roadmap.</p>
+            <p className='px-8 text-sm mb-5 font-ppagradir text-dark relative z-10'>After launch, a large sum of our mint capital will be refinanced back into our project to fund the future development of our roadmap.</p>
             <img src='/assets/images/calc.png' className='absolute right-0 bottom-0 w-[75px]' alt='' />
           </div>
           <div className='flex-grow-1 max-w-md content-center bg-darkYellow rounded-2xl relative overflow-hidden'>
@@ -204,12 +204,12 @@ const taikiMap = () => {
               <div className='bg-[#A17608] h-16 w-16 text-center pt-2 text-[32px] rounded-full font-ppagradirBold flex-shrink-0'>4</div>
               <div className='font-ppagradirBold text-[20px]'>Taikiverse + Future Partnerships</div>
             </div>
-            <p className='px-8 text-sm mb-5 text-dark relative z-10'>Let the games begin! Collect Taiki points to win rewards such as ultra-rare Taikis, Taiki-themed isometric web3 rooms, and so much more!</p>
+            <p className='px-8 text-sm mb-5 font-ppagradir text-dark relative z-10'>Let the games begin! Collect Taiki points to win rewards such as ultra-rare Taikis, Taiki-themed isometric web3 rooms, and so much more!</p>
             <img src='/assets/images/smiley.png' className='absolute right-0 bottom-0 w-[75px]' alt='' />
           </div>
         </div>
       </div>
-      <div className='mx-auto max-w-md relative mt-12 mb-12 text-center'>We’re constantly working to refine and improve our roadmap. Keep up with the progress here.</div>
+      <div className='mx-auto max-w-md font-ppagradir relative mt-12 mb-12 text-center'>We’re constantly working to refine and improve our roadmap. Keep up with the progress here.</div>
   </>;
 }
 

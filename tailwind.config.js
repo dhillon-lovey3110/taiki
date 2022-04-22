@@ -9,10 +9,12 @@ module.exports = {
       black: '#000000',
       white: '#ffffff',
       dark: '#A7A7A7',
+      themeDark: '#7A7A7A',
       darkBlue: '#25416B',
       darkGreen: '#256B2C',
       darkRed: '#8C3327',
       darkYellow: '#9A720A',
+      buttonHover: '#B6B6B6',
       gray: {
         100: '#f3f4f6',
         200: '#EAEBEC',
@@ -95,6 +97,9 @@ module.exports = {
         '8xl': '96rem',
         '9xl': '128rem',
       },
+      lineHeight: {
+        '42': '42px',
+      }
     }
   },
   plugins: [

@@ -22,7 +22,7 @@ const NFTS = (props: IAccordionProps) => {
   const array = [...Array(100)] 
   return (
     <>
-      <div className='overflow-x-scroll'>
+      <div className='overflow-x-scroll bg-[#100F0B]'>
         <div className='inline-flex'>
           {array.map( (_,i) => {
             return <NFT key={'image-'+(i+1)} url={'/assets/images/nfts/'+(i+1)+'.png'} />

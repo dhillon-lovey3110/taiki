@@ -44,7 +44,7 @@ const header = () => {
     return <>
       <div className='mx-auto max-w-7xl relative px-4'>
         <img src="/logo.svg" className='mx-auto mb-16' alt="Taiki" />
-        <p className='font-ppagradir text-[21px] text-center max-w-sm mx-auto font-thin text-themeDark mb-12 relative z-20'>Your friendly NFT collection for shiba inu lovers and lofi hip-hop enthusiasts.</p>
+        <p className='font-ppagradir text-[21px] text-center max-w-sm mx-auto font-thin text-dark mb-12 relative z-20'>Your friendly NFT collection for shiba inu lovers and lofi hip-hop enthusiasts.</p>
         <p className='text-center mb-8'><a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer font-ppagradirNarrow leading-8 hover:bg-buttonHover transition ease-in-out duration-500 hover:scale-110"><img src="/assets/images/discord-black.svg" alt="" className="mr-3" />Join the Discord</a></p>
         <p className='font-ppagradir text-[18px] text-center max-w-sm mx-auto font-thin text-themeDark pb-24 relative z-20'>Launch Date: Around May 2022</p>
         <div className='hidden md:block absolute bottom-0 right-0 z-10' onClick={handleLamp}>
@@ -157,7 +157,7 @@ const morePerks = () => {
             <img src="/assets/images/sparkle-grey.svg" alt="" />
           </div>
         </div>
-        <p className='text-base text-[18px] font-ppagradir text-center text-dark mb-20'>Stay updated via our <span className='text-white underline'>Discord.</span> </p>
+        <p className='text-base text-[21px] font-ppagradir text-center text-dark mb-20'>Stay updated via our <span className='text-white underline'>Discord.</span> </p>
       </div>
       <ImageSlide />
   </>;

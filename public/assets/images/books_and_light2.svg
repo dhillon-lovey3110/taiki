@@ -7,12 +7,12 @@
 <circle cx="313.5" cy="164.5" r="4" stroke="#9C9CA8"/>
 <circle cx="313.5" cy="172.5" r="4" stroke="#9C9CA8"/>
 <rect x="309" y="178" width="9" height="15" rx="2" fill="white"/>
-<ellipse cx="177.5" cy="156.623" rx="5.5" ry="6.5" fill="#9C9CA8"/>
+<!-- <ellipse cx="177.5" cy="156.623" rx="5.5" ry="6.5" fill="#9C9CA8"/>
 <ellipse cx="195.91" cy="137.106" rx="5.96629" ry="6.39245" transform="rotate(-40.4618 195.91 137.106)" fill="#9C9CA8"/>
 <circle cx="184" cy="161.123" r="6" fill="#9C9CA8"/>
 <circle cx="203.587" cy="135.599" r="5.96629" transform="rotate(-40.4618 203.587 135.599)" fill="#9C9CA8"/>
 <circle cx="184" cy="154.123" r="6" fill="#9C9CA8"/>
-<circle cx="199.161" cy="130.411" r="5.96629" transform="rotate(-40.4618 199.161 130.411)" fill="#9C9CA8"/>
+<circle cx="199.161" cy="130.411" r="5.96629" transform="rotate(-40.4618 199.161 130.411)" fill="#9C9CA8"/> -->
 <path d="M164 173C164 168.582 167.582 165 172 165H212C216.418 165 220 168.582 220 173V231C220 237.627 214.627 243 208 243H176C169.373 243 164 237.627 164 231V173Z" fill="#1A4E8B"/>
 <path d="M235 203.5C235 215.02 227.141 223 219 223C210.859 223 203 215.02 203 203.5C203 191.98 210.859 184 219 184C227.141 184 235 191.98 235 203.5Z" stroke="#1A4E8B" stroke-width="10"/>
 <rect x="294.07" y="121" width="110" height="7" transform="rotate(90 294.07 121)" fill="#9D9D9D"/>

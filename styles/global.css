@@ -11,13 +11,15 @@
 
 ::-webkit-scrollbar {
   width: 5px; 
-  height: 7px;
+  height: 1px;
+  position:absolute;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #1e202a;
   outline: 1px solid #1e202a;
   border-radius: 50px;
+  position:absolute;
 }
 
 ::-webkit-scrollbar-track {

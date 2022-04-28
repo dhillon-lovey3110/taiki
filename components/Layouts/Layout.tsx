@@ -15,7 +15,7 @@ interface LayoutProps {
 export default function Layout(props: LayoutProps) {
   return (
     <>
-      <div className={classNames( 'antialiased w-full flex flex-col bg-black text-white',props.className)}>
+      <div className={classNames( 'antialiased w-full flex flex-col !bg-background text-white',props.className)}>
       {props.meta}
       {typeof props.header !== 'undefined' ? props.header : <Header />}
       <div className="flex-grow">{props.children}</div>

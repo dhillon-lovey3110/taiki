@@ -1,5 +1,25 @@
+import React,{useRef} from 'react';
 import { Navbar, menuLinks, walletLinks } from "./navbar";
-export default function Header() {
+import type {ReactNode} from 'react';
+
+interface IHeaderProps {
+  publicMenu?: ReactNode;
+  sticky?: boolean;
+}
+
+const publicMenu = () => {
+  return <>
+    {menuLinks.map( (v,i) => {
+      return <div key={'desk-link-'+i} className="flex flex-row gap-8">
+        <li className="cursor-pointer font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110">{v.title}</li>
+        {(i!=menuLinks.length-1)&&<li className="">/</li>}
+      </div>;
+    })}
+  </>;
+}
+
+export default function Header(props: IHeaderProps) {
+  console.log(props);
   return (
     <>
       <div className="flex-grow">
@@ -12,12 +32,7 @@ export default function Header() {
               <Navbar />
               <div className="hidden md:flex md:flex-row md:flex-grow-1 px-5">
                   <ul className="inline-flex gap-7 text-themeDark">
-                    {menuLinks.map( (v,i) => {
-                      return <div key={'desk-link-'+i} className="flex flex-row gap-8">
-                        <li className="cursor-pointer font-ppagradir text-[18px] hover:text-gray-100 hover:transition-all hover:duration-500">{v.title}</li>
-                        {(i!=menuLinks.length-1)&&<li className="">/</li>}
-                      </div>;
-                    })}
+                    {props.publicMenu || publicMenu()}
                   </ul>
               </div>
               <div className="hidden md:flex md:flex-row md:flex-shrink-0">

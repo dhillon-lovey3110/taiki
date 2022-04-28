@@ -19,7 +19,6 @@ const publicMenu = () => {
 }
 
 export default function Header(props: IHeaderProps) {
-  console.log(props);
   return (
     <>
       <div className="flex-grow">

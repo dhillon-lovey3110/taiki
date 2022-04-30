@@ -181,7 +181,7 @@ const HomePage:NextPage = () => {
                 </p>
                 <p className='text-dark leading-[36px] text-[18px] font-ppagradir'>Influence roadmap decisions through voting polls, feedback, and other democratic means.</p>
               </div>
-              <div className='bg-[#19241C] p-10 flex-1 !rounded-[32px]'>
+              <div className='bg-[#1c221c] p-10 flex-1 !rounded-[32px]'>
               <img src="/assets/images/bear-smile-green.svg" className='mb-3' alt="" />
                 <p className='font-ppagradirBold text-[24px] mb-3'>
                   Exclusive Sneak<br />

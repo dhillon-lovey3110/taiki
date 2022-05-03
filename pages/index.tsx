@@ -39,20 +39,20 @@ const HomePage:NextPage = () => {
   const topNavigation = () => {
     return (
       <>
-          <div key={'desk-link-1'} className="flex flex-row gap-8">
-            <li className="cursor-pointer font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110" onClick={whatIsTaikiFriendsScroll}>What is Taiki Friends?</li>
+          <div key={'desk-link-1'} className="px-5 py-3 bg-background md:p-0 flex flex-row gap-8">
+            <li className="cursor-pointer list-none font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110" onClick={whatIsTaikiFriendsScroll}>What is Taiki Friends?</li>
           </div>
-          <li className="">/</li>
-          <div key={'desk-link-2'} className="flex flex-row gap-8">
-            <li className="cursor-pointer font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110" onClick={taikiMapScroll}>Taiki Map</li>
+          <li className="hidden md:block">/</li>
+          <div key={'desk-link-2'} className="px-5 py-3 bg-background md:p-0 flex flex-row gap-8">
+            <li className="cursor-pointer list-none font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110" onClick={taikiMapScroll}>Taiki Map</li>
           </div>
-          <li className="">/</li>
-          <div key={'desk-link-3'} className="flex flex-row gap-8">
-            <li className="cursor-pointer font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110" onClick={FaqScroll}>FAQ</li>
+          <li className="hidden md:block">/</li>
+          <div key={'desk-link-3'} className="px-5 py-3 bg-background md:p-0 flex flex-row gap-8">
+            <li className="cursor-pointer list-none font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110" onClick={FaqScroll}>FAQ</li>
           </div>
-          <li className="">/</li>
-          <div key={'desk-link-4'} className="flex flex-row gap-8">
-            <li className="cursor-pointer font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110" onClick={taikiTeamScroll}>Taiki Team</li>
+          <li className="hidden md:block">/</li>
+          <div key={'desk-link-4'} className="px-5 py-3 bg-background md:p-0 flex flex-row gap-8">
+            <li className="cursor-pointer list-none font-ppagradir text-[18px] hover:text-gray-100 transition-all duration-500 hover:scale-110" onClick={taikiTeamScroll}>Taiki Team</li>
           </div>
       </>
     );

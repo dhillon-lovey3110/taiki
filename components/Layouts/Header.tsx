@@ -29,7 +29,7 @@ export default function Header(props: IHeaderProps) {
                   <a className="bg-white inline-flex text-black px-3 py-3 rounded-full cursor-pointer leading-8 transition-all hover:bg-buttonHover duration-500 hover:scale-110"><Image src="/assets/images/twitter-black.svg" height={30} width={30} alt="" /></a>
                   <a className="bg-white inline-flex text-black px-3 py-3 rounded-full cursor-pointer leading-8 transition-all hover:bg-buttonHover duration-500 hover:scale-110"><Image src="/assets/images/discord-black.svg" height={30} width={30} alt="" /></a>
               </div>
-              <Navbar />
+              <Navbar publicMenu={props.publicMenu} />
               <div className="hidden md:flex md:flex-row md:flex-grow-1 px-5">
                   <ul className="inline-flex gap-7 text-themeDark">
                     {props.publicMenu || publicMenu()}

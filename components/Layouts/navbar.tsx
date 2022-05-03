@@ -1,7 +1,25 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, ReactNode } from 'react';
 
-const Navbar = () => {
+interface IHeaderProps {
+    publicMenu?: ReactNode;
+}
+
+const publicMenu = () => {
+    return <>
+        {menuLinks.map( (v,i) => {
+            return <div key={'mobile-link-'+i} className="w-full px-5 py-3 bg-black">
+                <Link href={v.url}>
+                    <a className='text-dark font-bold hover:text-white '>
+                        {v.title}
+                    </a>
+                </Link>
+            </div>;
+        })}
+    </>;
+  }
+
+const Navbar = (props: IHeaderProps) => {
     const [active, setActive] = useState(false);
     const handleClick = () => {
         setActive(!active);
@@ -27,17 +45,8 @@ const Navbar = () => {
             </svg>
             </button>
             <div className='w-full md:hidden'>
-                {active}
-                <div className={active?'absolute w-full lg:items-center items-start flex flex-col lg:h-auto right-0 z-20 pt-10':'hidden'}>
-                    {menuLinks.map( (v,i) => {
-                        return <div key={'mobile-link-'+i} className="w-full px-5 py-3 bg-black">
-                            <Link href={v.url}>
-                                <a className='text-dark font-bold hover:text-white '>
-                                    {v.title}
-                                </a>
-                            </Link>
-                        </div>;
-                    })}
+                <div className={'absolute top-[150px] left-0 bg-background w-full lg:items-center items-start flex flex-col lg:h-auto right-0 z-20 pt-10 transition-all duration-1000 opacity-0 z-[-111]'+(active?' z-[111] !opacity-100':'')}>
+                    {props.publicMenu || publicMenu()}
                 </div>
             </div>
         </nav>

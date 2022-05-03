@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 type IAccordionProps = {
   url?: string;
@@ -9,10 +10,16 @@ type IAccordionProps = {
 const NFT = (props: IAccordionProps) => {
     const setting = props.open || false;
     const [show, setShow] = useState(setting);
+
+    const handleHover = () => {
+      setShow(!show);
+    }
     return (
       <>
-          <motion.div whileHover={{width:220}} className={show?'overflow-hidden w-56 inline-block rounded-2xl mr-2':'overflow-hidden w-10 float-left rounded-2xl mr-2'}>
-            <img src={props.url} className='object-cover h-56 w-56' alt='' />
+          <motion.div whileHover={{width:220}} onHoverStart={handleHover} onHoverEnd={handleHover} className={'overflow-hidden rounded-2xl mr-2 ' + (show?'w-56':'w-10')}>
+            <div className={'h-56 w-56 relative '+(show?'left-0':'left-[-200%]')}>
+                <Image src={props.url} layout="fill" />
+            </div>
           </motion.div>
       </>
     );

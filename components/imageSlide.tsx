@@ -4,6 +4,7 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
 const ImageSlide = () => {
     let settings = {
@@ -19,16 +20,16 @@ const ImageSlide = () => {
       arrows : false,
     };
     return (
-      <div className='bg-black'>
+      <>
         <Slider {...settings}>
           <div>
-            <img src="/assets/images/nfts.png" className='pr-0' alt='' />
+            <Image src="/assets/images/nfts.png" height={697} width={1780} className='pr-0' alt='' />
           </div>
           <div>
-            <img src="/assets/images/nfts.png" className='pr-0' alt='' />
+            <Image src="/assets/images/nfts.png" height={697} width={1780} className='pr-0' alt='' />
           </div>
         </Slider>
-      </div>
+      </>
     );
 }
 

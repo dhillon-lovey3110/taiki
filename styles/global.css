@@ -10,14 +10,14 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px; 
-  height: 1px;
+  width: 0px; 
+  height: 0px;
   position:absolute;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #1e202a;
-  outline: 1px solid #1e202a;
+  outline: 0px solid #1e202a;
   border-radius: 50px;
   position:absolute;
 }

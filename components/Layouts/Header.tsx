@@ -1,6 +1,7 @@
 import React,{useRef} from 'react';
 import { Navbar, menuLinks, walletLinks } from "./navbar";
 import type {ReactNode} from 'react';
+import Image from 'next/image';
 
 interface IHeaderProps {
   publicMenu?: ReactNode;
@@ -25,8 +26,8 @@ export default function Header(props: IHeaderProps) {
         <div className='mx-auto max-w-7xl my-16'>
           <div className="flex flex-row justify-between items-center mx-5">
               <div className="flex flex-row flex-shrink-0 gap-5">
-                  <a className="bg-white inline-flex text-black px-3 py-3 rounded-full cursor-pointer leading-8 transition-all hover:bg-buttonHover duration-500 hover:scale-110"><img src="/assets/images/twitter-black.svg" alt="" /></a>
-                  <a className="bg-white inline-flex text-black px-3 py-3 rounded-full cursor-pointer leading-8 transition-all hover:bg-buttonHover duration-500 hover:scale-110"><img src="/assets/images/discord-black.svg" alt="" /></a>
+                  <a className="bg-white inline-flex text-black px-3 py-3 rounded-full cursor-pointer leading-8 transition-all hover:bg-buttonHover duration-500 hover:scale-110"><Image src="/assets/images/twitter-black.svg" height={30} width={30} alt="" /></a>
+                  <a className="bg-white inline-flex text-black px-3 py-3 rounded-full cursor-pointer leading-8 transition-all hover:bg-buttonHover duration-500 hover:scale-110"><Image src="/assets/images/discord-black.svg" height={30} width={30} alt="" /></a>
               </div>
               <Navbar />
               <div className="hidden md:flex md:flex-row md:flex-grow-1 px-5">
@@ -37,7 +38,7 @@ export default function Header(props: IHeaderProps) {
               <div className="hidden md:flex md:flex-row md:flex-shrink-0">
                 {walletLinks.map( (v,i) => {
                   return <div key={"wallet-"+i} >
-                    <a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer font-ppagradirNarrow leading-8 transition-all hover:bg-buttonHover duration-500 hover:scale-110"><img src="/assets/images/wallet-black.svg" alt="" className="mr-3" />Connect wallet</a>
+                    <a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer font-ppagradirNarrow leading-8 transition-all hover:bg-buttonHover duration-500 hover:scale-110"><Image src="/assets/images/wallet-black.svg" height={27} width={27} alt="" />&nbsp;&nbsp;Connect wallet</a>
                   </div>;
                 } )}
               </div>

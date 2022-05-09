@@ -16,6 +16,7 @@ const ImageSlide = () => {
       pauseOnHover: false,
       cssEase: 'linear',
       infinite: true,
+      loop:true,
       prevArrow: null,
       arrows : false,
     };

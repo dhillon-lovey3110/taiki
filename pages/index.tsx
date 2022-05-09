@@ -102,20 +102,20 @@ const HomePage:NextPage = () => {
           <p className='text-center mb-8'><a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer font-ppagradirNarrow leading-8 hover:bg-buttonHover transition ease-in-out duration-500 hover:scale-110"><Image src="/assets/images/discord-black.svg" height={30} width={30} alt="" />&nbsp;Join the Discord</a></p>
           <p className='font-ppagradir text-[18px] text-center max-w-sm mx-auto font-thin text-themeDark pb-24 relative z-20'>Launch Date: Around May 2022</p>
           <div className='hidden md:block absolute bottom-0 right-0 z-10' onClick={handleLamp}>
-            <div className='absolute w-14 bottom-[75px] right-[138px]'>
+            <div className='absolute w-14 bottom-[67px] right-[138px]'>
               <Image src="/assets/images/smoke.gif" height={100} width={75} alt="smoke" />
             </div>
-            <div className='w-full'>
+            <div className='w-full relative bottom-[-7px]'>
               <Image src={lamp} alt="books and light" height={235} width={350} />
             </div>
             <div className='bg-transparent cursor-pointer rounded-full h-5 w-5 absolute right-[38px] top-[165px]'></div>
           </div>
           <div className='hidden md:block absolute bottom-0 left-0 z-10'>
               <p className='absolute z-20 bottom-5 right-16 font-semibold text-sm'><a onClick={handlePlayer} className={playerActive?'mr-2 cursor-pointer':'mr-2 cursor-pointer text-gray-500'}>ON</a><a onClick={handlePlayer}   className={playerActive?'cursor-pointer text-gray-500':'cursor-pointer'}>OFF</a></p>
-              <div className={playerActive?"w-[150px] absolute left-[70px] bottom-[200px]":"hidden"}>
+              <div className={playerActive?"w-[150px] absolute left-[63px] bottom-[200px]":"hidden"}>
                 <Image src="/assets/images/music-playing.gif" alt="music symbols" height={200} width={200} />
               </div>
-              <div className='w-full'>
+              <div className='w-full relative bottom-[-6px]'>
                 <Image src="/assets/images/music-player.svg" height={200} width={350} alt="books and light" />
               </div>
           </div>
@@ -139,29 +139,37 @@ const HomePage:NextPage = () => {
 
         <div className='mx-auto max-w-5xl relative mb-[32px] px-4'>
           <div className='flex flex-col items-center md:space-x-[32px] md:flex-row md:justify-center'>
-            <div className='flex-1 max-w-[30rem] content-center mb-[32px] md:mb-[0px] bg-[#131A16] rounded-2xl'>
+            <div className='flex-1 max-w-[30rem] content-center mb-[32px] md:mb-[0px] bg-[#131A16] rounded-2xl overflow-hidden'>
               <p className='p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="text-[#00FF7E]">7,777</span><br />Randomly<br />Generated<br />Friends</p>
               <p className='px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Open your shiba basket to reveal a random combination of head traits, face traits, expressions, body traits, and backgrounds. Who knows what kind of friend you’ll get?</p>
-              <Image src='/assets/images/7777-footer.png' height={240} width={480} alt='' />
+              <div className="relative bottom-[-4px]">
+                <Image src='/assets/images/7777-footer.png' height={240} width={480} alt='' />
+              </div>
             </div>
-            <div className='flex-1 max-w-[30rem] content-center bg-[#141416] rounded-2xl'>
+            <div className='flex-1 max-w-[30rem] content-center bg-[#141416] rounded-2xl overflow-hidden'>
               <p className='p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="super-rare">Super Rare</span><br />Collectible<br />1-of-1<br />Combinations</p>
               <p className='px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Have a chance to discover limited unique combinations that make your shiba inu avatar truly special and stand out from the rest.</p>
-              <Image src='/assets/images/super-rare-footer.png' height={240} width={480} alt='' />
+              <div className="relative bottom-[-4px]">
+                <Image src='/assets/images/super-rare-footer.png' height={240} width={480} alt='' />
+              </div>
             </div>
           </div>
         </div>
         <div className='mx-auto max-w-5xl relative mb-16 px-4'>
           <div className='flex flex-col items-center md:space-x-[32px] md:flex-row md:justify-center'>
-            <div className='flex-grow-1 max-w-[30rem] mb-[32px] md:mb-[0px] content-center bg-[#0F1B19] rounded-2xl'>
+            <div className='flex-grow-1 max-w-[30rem] mb-[32px] md:mb-[0px] content-center bg-[#0F1B19] rounded-2xl overflow-hidden'>
               <p className='p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="animal-charity">Animal Charity</span><br />Contributions</p>
               <p className='px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Giving is a core part of our project. We plan to donate a percentage of our mint to help animal charities and charities that resonate with us and the community.</p>
-              <Image src='/assets/images/animal-charity-footer.png' height={288} width={480} alt='' />
+              <div className="relative bottom-[-11px]">
+                <Image src='/assets/images/animal-charity-footer.png' height={288} width={480} alt='' />
+              </div>
             </div>
-            <div className='flex-grow-1 max-w-[30rem] content-center bg-[#191B13] rounded-2xl'>
+            <div className='flex-grow-1 max-w-[30rem] content-center bg-[#191B13] rounded-2xl overflow-hidden'>
               <p className='p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="cool-exclusive">Cool Exclusive</span><br />Holder Perks</p>
               <p className='px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Gain exclusive holder perks as a Taiki Friends NFT holder. Private channels to chat with other holders, whitelist giveaways, sneak peeks, and more!</p>
-              <Image src='/assets/images/holder-perks.svg' height={288} width={480} alt='' />
+              <div className="relative bottom-[-4px]">
+                <Image src='/assets/images/holder-perks.svg' height={288} width={480} alt='' />
+              </div>
             </div>
           </div>
         </div>

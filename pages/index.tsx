@@ -132,7 +132,7 @@ const HomePage:NextPage = () => {
               A fun collection for dog and music lovers.
             </div>
             <div className='flex-1 max-w-[30rem] text-center md:text-left flex items-center'>
-              <p className='!text-[21px] text-dark leading-42 pl-[56px] font-ppagradir'>Taiki Friends is an NFT collection of 7,777 randomly generated super cute shiba inus living on the Ethereum blockchain.</p>
+              <p className='!text-[21px] text-dark leading-42 md:pl-[56px] font-ppagradir'>Taiki Friends is an NFT collection of 7,777 randomly generated super cute shiba inus living on the Ethereum blockchain.</p>
             </div>
           </div>
         </div>
@@ -140,15 +140,15 @@ const HomePage:NextPage = () => {
         <div className='mx-auto max-w-5xl relative mb-[32px] px-4'>
           <div className='flex flex-col items-center md:space-x-[32px] md:flex-row md:justify-center'>
             <div className='flex-1 max-w-[30rem] content-center mb-[32px] md:mb-[0px] bg-[#131A16] rounded-2xl overflow-hidden'>
-              <p className='p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="text-[#00FF7E]">7,777</span><br />Randomly<br />Generated<br />Friends</p>
-              <p className='px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Open your shiba basket to reveal a random combination of head traits, face traits, expressions, body traits, and backgrounds. Who knows what kind of friend you’ll get?</p>
+              <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="text-[#00FF7E]">7,777</span><br />Randomly<br />Generated<br />Friends</p>
+              <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Open your shiba basket to reveal a random combination of head traits, face traits, expressions, body traits, and backgrounds. Who knows what kind of friend you’ll get?</p>
               <div className="relative bottom-[-4px]">
                 <Image src='/assets/images/7777-footer.png' height={240} width={480} alt='' />
               </div>
             </div>
             <div className='flex-1 max-w-[30rem] content-center bg-[#141416] rounded-2xl overflow-hidden'>
-              <p className='p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="super-rare">Super Rare</span><br />Collectible<br />1-of-1<br />Combinations</p>
-              <p className='px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Have a chance to discover limited unique combinations that make your shiba inu avatar truly special and stand out from the rest.</p>
+              <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="super-rare">Super Rare</span><br />Collectible<br />1-of-1<br />Combinations</p>
+              <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Have a chance to discover limited unique combinations that make your shiba inu avatar truly special and stand out from the rest.</p>
               <div className="relative bottom-[-4px]">
                 <Image src='/assets/images/super-rare-footer.png' height={240} width={480} alt='' />
               </div>
@@ -158,15 +158,15 @@ const HomePage:NextPage = () => {
         <div className='mx-auto max-w-5xl relative mb-16 px-4'>
           <div className='flex flex-col items-center md:space-x-[32px] md:flex-row md:justify-center'>
             <div className='flex-grow-1 max-w-[30rem] mb-[32px] md:mb-[0px] content-center bg-[#0F1B19] rounded-2xl overflow-hidden'>
-              <p className='p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="animal-charity">Animal Charity</span><br />Contributions</p>
-              <p className='px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Giving is a core part of our project. We plan to donate a percentage of our mint to help animal charities and charities that resonate with us and the community.</p>
+              <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="animal-charity">Animal Charity</span><br />Contributions</p>
+              <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Giving is a core part of our project. We plan to donate a percentage of our mint to help animal charities and charities that resonate with us and the community.</p>
               <div className="relative bottom-[-11px]">
                 <Image src='/assets/images/animal-charity-footer.png' height={288} width={480} alt='' />
               </div>
             </div>
             <div className='flex-grow-1 max-w-[30rem] content-center bg-[#191B13] rounded-2xl overflow-hidden'>
-              <p className='p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="cool-exclusive">Cool Exclusive</span><br />Holder Perks</p>
-              <p className='px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Gain exclusive holder perks as a Taiki Friends NFT holder. Private channels to chat with other holders, whitelist giveaways, sneak peeks, and more!</p>
+              <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="cool-exclusive">Cool Exclusive</span><br />Holder Perks</p>
+              <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Gain exclusive holder perks as a Taiki Friends NFT holder. Private channels to chat with other holders, whitelist giveaways, sneak peeks, and more!</p>
               <div className="relative bottom-[-4px]">
                 <Image src='/assets/images/holder-perks.svg' height={288} width={480} alt='' />
               </div>
@@ -237,13 +237,13 @@ const HomePage:NextPage = () => {
 
   const taikiMap = () => {
     return <>
-        <div className='mx-auto max-w-7xl pt-16 relative px-4' ref={taikiMapRef}>
+        <div className='mx-auto max-w-7xl relative pt-16 relative px-4' ref={taikiMapRef}>
           <div className='max-w-3xl mx-auto mb-7'>
             <p className='font-ppagradirBold text-[46px] text-center'>The Taiki Map</p>
           </div>
           <p className='text-base text-center font-ppagradir text-dark mb-14 font-ppagradir !text-[21px]'>The current tentative roadmap for Taiki Friends.</p>
-          <div className='flex flex-col items-center md:justify-center md:space-x-[32px] md:flex-row mb-10'>
-            <div className='flex-grow-1 max-w-[36rem] content-center mb-[32px] md:mb-[0] bg-darkBlue rounded-[32px] relative overflow-hidden'>
+          <div className='flex flex-col flex-1 h-full md:flex-row items-center md:justify-center md:space-x-[32px] mb-[32px]'>
+            <div className='flex-1 w-full max-w-[36rem] content-center mb-[32px] md:mb-[0] bg-darkBlue rounded-[32px] relative overflow-hidden'>
               <div className='bg-[#365685] p-5 m-12 mb-8 rounded-[32px] flex gap-7 align-middle'>
                 <div className='bg-darkBlue h-20 w-20 text-center pt-3 text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>1</div>
                 <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>X% of Mint Back into the Project</div>
@@ -253,7 +253,7 @@ const HomePage:NextPage = () => {
                 <Image src='/assets/images/dollar-sign.png' height={125} width={125} alt='' />
               </div>
             </div>
-            <div className='flex-grow-1 max-w-[36rem] content-center bg-darkGreen rounded-[32px] relative overflow-hidden'>
+            <div className='flex-1 w-full  h-full max-w-[36rem] content-center bg-darkGreen rounded-[32px] relative overflow-hidden'>
               <div className='bg-[#397E40] p-5 m-12 mb-8 rounded-[32px] flex gap-7 align-middle'>
                 <div className='bg-[#256B2C] h-20 w-20 text-center pt-3 text-[40px] text-[32px] rounded-full font-ppagradirBold flex-shrink-0'>2</div>
                 <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>Untitled Points- Based Game</div>
@@ -266,8 +266,8 @@ const HomePage:NextPage = () => {
           </div>
         </div>
         <div className='mx-auto max-w-7xl relative mt-[32px] mb-12 px-4'>
-        <div className='flex flex-col items-center md:justify-center md:space-x-[32px] md:flex-row'>
-            <div className='flex-grow-1 max-w-[36rem] content-center mb-[32px] md:mb-[0] bg-darkRed rounded-[32px] relative overflow-hidden'>
+        <div className='flex flex-col md:flex-row items-center md:justify-center md:space-x-[32px]'>
+            <div className='flex-1 w-full max-w-[36rem] content-center mb-[32px] md:mb-[0] bg-darkRed rounded-[32px] relative overflow-hidden'>
               <div className='bg-[#AA4537] p-5 m-12 mb-8 rounded-[32px] flex gap-7 align-middle'>
                 {/* <div className='bg-[#9B1724] h-16 w-16 text-center pt-2 text-[32px] rounded-full font-ppagradirBold flex-shrink-0'>3</div> */}
                 <div className='bg-darkRed h-20 w-20 text-center pt-3 text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>3</div>
@@ -278,7 +278,7 @@ const HomePage:NextPage = () => {
                 <Image src='/assets/images/calc.png' height={125} width={125} alt='' />
               </div>
             </div>
-            <div className='flex-grow-1 max-w-[36rem] content-center bg-darkYellow rounded-[32px] relative overflow-hidden'>
+            <div className='flex-1 w-full max-w-[36rem] content-center bg-darkYellow rounded-[32px] relative overflow-hidden'>
               <div className='bg-[#B39337] p-5 px-3 m-12 mb-8 rounded-[32px] flex gap-7 align-middle'>
                 <div className='bg-[#A17608] h-20 w-20 text-center pt-3 text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>4</div>
                 <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>Taikiverse + Future Partnerships</div>
@@ -296,11 +296,11 @@ const HomePage:NextPage = () => {
 
   const faq = () => {
     return <>
-      <div className='mx-auto max-w-7xl py-16 relative px-5' ref={FaqRef}>
+      <div className='mx-auto max-w-7xl py-16 relative md:px-5 overflow-hidden' ref={FaqRef}>
         <div className='max-w-2xl mx-auto mb-32'>
           <p className='font-ppagradirBold text-[46px] text-center'>You have questions? We have answers.</p>
         </div>
-        <div className='mx-auto max-w-5xl relative mt-12 mb-12'>
+        <div className='mx-auto max-w-5xl relative mt-12 mb-12 px-5 md:px-0'>
           <Accordion title="What are NFTs?" open={true} content="NFTs stand for non-fungible tokens - items that have a one-of-a-kind value. Imagine I have a rooster and you have a duck. These are non-fungible things because they each have their own unique tradeable value. On the contrary, currency like US dollars are fungible because one dollar is the same as another one dollar. Get it?" />
           <Accordion title="What’s so special about Taiki Friends?" content="NFTs stand for non-fungible tokens - items that have a one-of-a-kind value. Imagine I have a rooster and you have a duck. These are non-fungible things because they each have their own unique tradeable value. On the contrary, currency like US dollars are fungible because one dollar is the same as another one dollar. Get it?" />
           <Accordion title="What is the release date of the collection?" content="NFTs stand for non-fungible tokens - items that have a one-of-a-kind value. Imagine I have a rooster and you have a duck. These are non-fungible things because they each have their own unique tradeable value. On the contrary, currency like US dollars are fungible because one dollar is the same as another one dollar. Get it?" />

@@ -27,7 +27,7 @@ const Navbar = (props: IHeaderProps) => {
     };
 
     return <>
-        <nav className='flex items-center flex-wrap bg-green-400 p-3 '>
+        <nav className='flex items-center flex-wrap bg-green-400 p-3 md:hidden'>
             <button onClick={handleClick} className='inline-flex p-3 hover:bg-gray-900 rounded md:hidden text-white ml-auto hover:text-white outline-none'>
             <svg
                 className='w-6 h-6'

@@ -21,7 +21,7 @@ export default function Accordion(props: IAccordionProps) {
         </svg>
         }</h2>
         <div className={"transition-all duration-500  " + (show==false?'opacity-0 h-0':'opacity-100 md:h-28')}>
-          <div className={"text-[18px] font-ppagradir font-agradir mb-10 font-extralight text-dark transition-opacity delay-500 duration-500 opacity-0" + (show==false?"":'opacity-100')}>{props.content}</div>
+          <div className={"text-[18px] font-ppagradir font-agradir mb-10 font-extralight text-dark transition-opacity delay-300 duration-500 opacity-0" + (show==false?"":'opacity-100')}>{props.content}</div>
         </div>
         <hr className='mb-10' />
     </>

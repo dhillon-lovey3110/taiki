@@ -16,9 +16,9 @@ const NFT = (props: IAccordionProps) => {
     }
     return (
       <>
-          <motion.div whileHover={{width:220}} onHoverStart={handleHover} onHoverEnd={handleHover} className={'overflow-hidden rounded-2xl mr-2 ' + (show?'w-56':'w-10')}>
-            <div className={'h-56 w-56 relative '+(show?'left-0':'left-[-200%]')}>
-                <Image src={props.url} layout="fill" />
+          <motion.div transition={{ duration: .25 }} whileHover={{width:220}} onHoverStart={handleHover} onHoverEnd={handleHover} className={'overflow-hidden rounded-2xl mr-2 ' + (show?'w-56':'w-10')}>
+            <div className={'h-56 relative bg-white '+(show?'':'')}>
+                <Image src={props.url} layout="fill" objectFit="cover" objectPosition="center" />
             </div>
           </motion.div>
       </>

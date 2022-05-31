@@ -249,7 +249,7 @@ const HomePage:NextPage = () => {
                 <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>X% of Mint Back into the Project</div>
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>After launch, a large sum of our mint capital will be refinanced back into our project to fund the future development of our roadmap.</p>
-              <div className='absolute right-0 bottom-0'>
+              <div className='absolute right-0 bottom-[-6px]'>
                 <Image src='/assets/images/dollar-sign.png' height={125} width={125} alt='' />
               </div>
             </div>
@@ -259,7 +259,7 @@ const HomePage:NextPage = () => {
                 <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>Untitled Points- Based Game</div>
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Let the games begin! Collect Taiki points to win rewards such as ultra-rare Taikis, Taiki-themed isometric web3 rooms, and so much more!</p>
-              <div className='absolute right-0 bottom-0'>
+              <div className='absolute right-0 bottom-[-6px]'>
                 <Image src='/assets/images/numbers.png' height={125} width={125} alt='' />
               </div>
             </div>
@@ -274,7 +274,7 @@ const HomePage:NextPage = () => {
                 <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>Online Taiki Tamagotchi</div>
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Bring back the nostalgia. Take care of your Taiki in his virtual tamagotchi space. Feed him lollipops, play catch, give him a shower. Trade items with others.</p>
-              <div className='absolute right-0 bottom-0'>
+              <div className='absolute right-0 bottom-[-6px]'>
                 <Image src='/assets/images/calc.png' height={125} width={125} alt='' />
               </div>
             </div>
@@ -284,7 +284,7 @@ const HomePage:NextPage = () => {
                 <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>Taikiverse + Future Partnerships</div>
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Dive into our web3 social community game where holders can gather to chat, listen to music, and play fun minigames together!</p>
-              <div className='absolute right-0 bottom-0'>
+              <div className='absolute right-0 bottom-[-6px]'>
                 <Image src='/assets/images/smiley.png' height={125} width={125} alt='' />
               </div>
             </div>
@@ -319,7 +319,7 @@ const HomePage:NextPage = () => {
           <div className='max-w-sm mx-auto mb-20'>
             <p className='font-ppagradirBold text-[46px] text-center'>Team Taiki</p>
           </div>
-          <div className='flex flex-col items-center md:justify-center gap-10 md:flex-row'>
+          <div className='flex flex-col items-center md:justify-center space-x-10 md:flex-row'>
             <div>
               <Image src="/assets/images/acornzzi.png" height={256} width={256} alt='' />
               <p className='text-[24px] text-center text-white mt-3 font-ppagradirBold'>acornzzi</p>

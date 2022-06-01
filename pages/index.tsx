@@ -139,14 +139,14 @@ const HomePage:NextPage = () => {
 
         <div className='mx-auto max-w-5xl relative mb-[32px] px-4'>
           <div className='flex flex-col items-center md:space-x-[32px] md:flex-row md:justify-center'>
-            <div className='flex-1 max-w-[30rem] content-center mb-[32px] md:mb-[0px] bg-[#131A16] rounded-2xl overflow-hidden'>
+            <div className='flex-1 max-w-[30rem] content-center mb-[32px] md:mb-[0px] bg-[#131A16] rounded-3xl overflow-hidden'>
               <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="text-[#00FF7E]">7,777</span><br />Randomly<br />Generated<br />Friends</p>
               <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Open your shiba basket to reveal a random combination of head traits, face traits, expressions, body traits, and backgrounds. Who knows what kind of friend you’ll get?</p>
               <div className="relative bottom-[-4px]">
                 <Image src='/assets/images/7777-footer.png' height={240} width={480} alt='' />
               </div>
             </div>
-            <div className='flex-1 max-w-[30rem] content-center bg-[#141416] rounded-2xl overflow-hidden'>
+            <div className='flex-1 max-w-[30rem] content-center bg-[#141416] rounded-3xl overflow-hidden'>
               <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="super-rare">Super Rare</span><br />Collectible<br />1-of-1<br />Combinations</p>
               <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Have a chance to discover limited unique combinations that make your shiba inu avatar truly special and stand out from the rest.</p>
               <div className="relative bottom-[-4px]">
@@ -157,17 +157,17 @@ const HomePage:NextPage = () => {
         </div>
         <div className='mx-auto max-w-5xl relative mb-16 px-4'>
           <div className='flex flex-col items-center md:space-x-[32px] md:flex-row md:justify-center'>
-            <div className='flex-grow-1 max-w-[30rem] mb-[32px] md:mb-[0px] content-center bg-[#0F1B19] rounded-2xl overflow-hidden'>
+            <div className='flex-grow-1 max-w-[30rem] mb-[32px] md:mb-[0px] content-center bg-[#0F1B19] rounded-3xl overflow-hidden'>
               <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="animal-charity">Animal Charity</span><br />Contributions</p>
               <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Giving is a core part of our project. We plan to donate a percentage of our mint to help animal charities and charities that resonate with us and the community.</p>
               <div className="relative bottom-[-11px]">
                 <Image src='/assets/images/animal-charity-footer.png' height={288} width={480} alt='' />
               </div>
             </div>
-            <div className='flex-grow-1 max-w-[30rem] content-center bg-[#191B13] rounded-2xl overflow-hidden'>
+            <div className='flex-grow-1 max-w-[30rem] content-center bg-[#191B13] rounded-3xl overflow-hidden'>
               <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="cool-exclusive">Cool Exclusive</span><br />Holder Perks</p>
               <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Gain exclusive holder perks as a Taiki Friends NFT holder. Private channels to chat with other holders, whitelist giveaways, sneak peeks, and more!</p>
-              <div className="relative bottom-[-4px]">
+              <div className="relative bottom-[-6px]">
                 <Image src='/assets/images/holder-perks.svg' height={288} width={480} alt='' />
               </div>
             </div>

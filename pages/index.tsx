@@ -96,27 +96,27 @@ const HomePage:NextPage = () => {
       return <>
         <div className='mx-auto max-w-7xl relative px-4'>
           <div className='mx-auto mb-16 text-center'>
-            <Image src="/logo.svg" height={150} width={500} alt="Taiki" />
+            <Image src="/logo.svg" height={150} width={500} alt="Taiki" priority={true} />
           </div>
           <p className='font-ppagradir !text-[21px] text-center max-w-sm mx-auto font-thin text-dark mb-12 relative z-20'>Your friendly NFT collection for shiba inu lovers and lofi hip-hop enthusiasts.</p>
           <p className='text-center mb-8'><a className="bg-white inline-flex text-black px-5 py-3 rounded-full cursor-pointer font-ppagradirNarrow leading-8 hover:bg-buttonHover transition ease-in-out duration-500 hover:scale-110"><Image src="/assets/images/discord-black.svg" height={30} width={30} alt="" />&nbsp;Join the Discord</a></p>
           <p className='font-ppagradir text-[18px] text-center max-w-sm mx-auto font-thin text-themeDark pb-24 relative z-20'>Launch Date: Around May 2022</p>
           <div className='hidden md:block absolute bottom-0 right-0 z-10' onClick={handleLamp}>
             <div className='absolute w-14 bottom-[67px] right-[138px]'>
-              <Image src="/assets/images/smoke.gif" height={100} width={75} alt="smoke" />
+              <Image src="/assets/images/smoke.gif" height={100} width={75} alt="smoke" priority={true} />
             </div>
             <div className='w-full relative bottom-[-7px]'>
-              <Image src={lamp} alt="books and light" height={235} width={350} />
+              <Image src={lamp} alt="books and light" height={235} width={350} priority={true} />
             </div>
             <div className='bg-transparent cursor-pointer rounded-full h-5 w-5 absolute right-[38px] top-[165px]'></div>
           </div>
           <div className='hidden md:block absolute bottom-0 left-0 z-10'>
               <p className='absolute z-20 bottom-5 right-16 font-semibold text-sm'><a onClick={handlePlayer} className={playerActive?'mr-2 cursor-pointer':'mr-2 cursor-pointer text-gray-500'}>ON</a><a onClick={handlePlayer}   className={playerActive?'cursor-pointer text-gray-500':'cursor-pointer'}>OFF</a></p>
               <div className={playerActive?"w-[150px] absolute left-[63px] bottom-[200px]":"hidden"}>
-                <Image src="/assets/images/music-playing.gif" alt="music symbols" height={200} width={200} />
+                <Image src="/assets/images/music-playing.gif" alt="music symbols" height={200} width={200} priority={true} />
               </div>
               <div className='w-full relative bottom-[-6px]'>
-                <Image src="/assets/images/music-player.svg" height={200} width={350} alt="books and light" />
+                <Image src="/assets/images/music-player.svg" height={200} width={350} alt="books and light" priority={true} />
               </div>
           </div>
         </div>
@@ -143,14 +143,14 @@ const HomePage:NextPage = () => {
               <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="text-[#00FF7E]">7,777</span><br />Randomly<br />Generated<br />Friends</p>
               <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Open your shiba basket to reveal a random combination of head traits, face traits, expressions, body traits, and backgrounds. Who knows what kind of friend you’ll get?</p>
               <div className="relative bottom-[-4px]">
-                <Image src='/assets/images/7777-footer.png' height={240} width={480} alt='' />
+                <Image src='/assets/images/7777-footer.png' height={240} width={480} alt='' priority={true} />
               </div>
             </div>
             <div className='flex-1 max-w-[30rem] content-center bg-[#141416] rounded-3xl overflow-hidden'>
               <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="super-rare">Super Rare</span><br />Collectible<br />1-of-1<br />Combinations</p>
               <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Have a chance to discover limited unique combinations that make your shiba inu avatar truly special and stand out from the rest.</p>
               <div className="relative bottom-[-4px]">
-                <Image src='/assets/images/super-rare-footer.png' height={240} width={480} alt='' />
+                <Image src='/assets/images/super-rare-footer.png' height={240} width={480} alt='' priority={true} />
               </div>
             </div>
           </div>
@@ -161,14 +161,14 @@ const HomePage:NextPage = () => {
               <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="animal-charity">Animal Charity</span><br />Contributions</p>
               <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Giving is a core part of our project. We plan to donate a percentage of our mint to help animal charities and charities that resonate with us and the community.</p>
               <div className="relative bottom-[-11px]">
-                <Image src='/assets/images/animal-charity-footer.png' height={288} width={480} alt='' />
+                <Image src='/assets/images/animal-charity-footer.png' height={288} width={480} alt='' priority={true} />
               </div>
             </div>
             <div className='flex-grow-1 max-w-[30rem] content-center bg-[#191B13] rounded-3xl overflow-hidden'>
               <p className='p-[26px] md:p-[56px] pb-[16px] font-ppagradirBold text-[30px]'><span className="cool-exclusive">Cool Exclusive</span><br />Holder Perks</p>
               <p className='px-[26px] md:px-[56px] pb-[16px] mb-5 text-dark leading-[36px] text-[18px] font-ppagradir'>Gain exclusive holder perks as a Taiki Friends NFT holder. Private channels to chat with other holders, whitelist giveaways, sneak peeks, and more!</p>
               <div className="relative bottom-[-6px]">
-                <Image src='/assets/images/holder-perks.svg' height={288} width={480} alt='' />
+                <Image src='/assets/images/holder-perks.svg' height={288} width={480} alt=''  priority={true} />
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@ const HomePage:NextPage = () => {
           <p className='text-base text-center text-dark mb-14 font-ppagradir !text-[21px]'>Amazing perks for planned for our holders.</p>
           <div className='flex flex-col gap-10 md:flex-row'>
               <div className='bg-[#1D1D16] p-10 flex-1 !rounded-[32px]'>
-                <Image src="/assets/images/crown-gold.svg" height={40} width={40} className='mb-3' alt="" />
+                <Image src="/assets/images/crown-gold.svg" height={40} width={40} className='mb-3' alt="" priority={true} />
                 <p className='font-ppagradirBold text-[24px] mb-3'>
                   Whitelist<br />
                   Giveaways
@@ -193,7 +193,7 @@ const HomePage:NextPage = () => {
                 <p className='text-dark leading-[36px] text-[18px] font-ppagradir'>Access weekly whitelist giveaways to other projects through our holder’s Discord channel</p>
               </div>
               <div className='bg-[#171F23] p-10 flex-1 !rounded-[32px]'>
-              <Image src="/assets/images/voting-blue.svg" height={40} width={40}  className='mb-3' alt="" />
+              <Image src="/assets/images/voting-blue.svg" height={40} width={40}  className='mb-3' alt="" priority={true} />
                 <p className='font-ppagradirBold text-[24px] mb-3'>
                   Voting &amp; Decision-<br />
                   Making
@@ -201,7 +201,7 @@ const HomePage:NextPage = () => {
                 <p className='text-dark leading-[36px] text-[18px] font-ppagradir'>Influence roadmap decisions through voting polls, feedback, and other democratic means.</p>
               </div>
               <div className='bg-[#1c221c] p-10 flex-1 !rounded-[32px]'>
-              <Image src="/assets/images/bear-smile-green.svg" height={40} width={40}  className='mb-3' alt="" />
+              <Image src="/assets/images/bear-smile-green.svg" height={40} width={40}  className='mb-3' alt="" priority={true} />
                 <p className='font-ppagradirBold text-[24px] mb-3'>
                   Exclusive Sneak<br />
                   Peeks
@@ -218,13 +218,13 @@ const HomePage:NextPage = () => {
       <div className='mx-auto max-w-7xl pt-16 relative px-4'>
           <div className='flex justify-center mb-5'>
             <div className='flex-shrink-1 self-center'>
-              <Image src="/assets/images/sparkle-grey.svg" height={25} width={25} alt="" />
+              <Image src="/assets/images/sparkle-grey.svg" height={25} width={25} alt="" priority={true} />
             </div>
             <div className='flex-grow-0 text-center text-dark px-5 font-ppagradirBold !text-[24px]'>
               More Perks to be<br />Announced!
             </div>
             <div className='flex-shrink-1 self-center'>
-             <Image src="/assets/images/sparkle-grey.svg" height={25} width={25} alt="" />
+             <Image src="/assets/images/sparkle-grey.svg" height={25} width={25} alt="" priority={true} />
             </div>
           </div>
           <p className='text-base !text-[21px] font-ppagradir text-center text-dark mb-20'>Stay updated via our <span className='text-white underline'>Discord.</span> </p>
@@ -250,7 +250,7 @@ const HomePage:NextPage = () => {
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>After launch, a large sum of our mint capital will be refinanced back into our project to fund the future development of our roadmap.</p>
               <div className='absolute right-0 bottom-[-6px]'>
-                <Image src='/assets/images/dollar-sign.png' height={125} width={125} alt='' />
+                <Image src='/assets/images/dollar-sign.png' height={125} width={125} alt='' priority={true} />
               </div>
             </div>
             <div className='flex-1 w-full  h-full max-w-[36rem] content-center bg-darkGreen rounded-[32px] relative overflow-hidden'>
@@ -260,7 +260,7 @@ const HomePage:NextPage = () => {
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Let the games begin! Collect Taiki points to win rewards such as ultra-rare Taikis, Taiki-themed isometric web3 rooms, and so much more!</p>
               <div className='absolute right-0 bottom-[-6px]'>
-                <Image src='/assets/images/numbers.png' height={125} width={125} alt='' />
+                <Image src='/assets/images/numbers.png' height={125} width={125} alt='' priority={true} />
               </div>
             </div>
           </div>
@@ -275,7 +275,7 @@ const HomePage:NextPage = () => {
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Bring back the nostalgia. Take care of your Taiki in his virtual tamagotchi space. Feed him lollipops, play catch, give him a shower. Trade items with others.</p>
               <div className='absolute right-0 bottom-[-6px]'>
-                <Image src='/assets/images/calc.png' height={125} width={125} alt='' />
+                <Image src='/assets/images/calc.png' height={125} width={125} alt='' priority={true} />
               </div>
             </div>
             <div className='flex-1 w-full max-w-[36rem] content-center bg-darkYellow rounded-[32px] relative overflow-hidden'>
@@ -285,7 +285,7 @@ const HomePage:NextPage = () => {
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Dive into our web3 social community game where holders can gather to chat, listen to music, and play fun minigames together!</p>
               <div className='absolute right-0 bottom-[-6px]'>
-                <Image src='/assets/images/smiley.png' height={125} width={125} alt='' />
+                <Image src='/assets/images/smiley.png' height={125} width={125} alt='' priority={true} />
               </div>
             </div>
           </div>
@@ -321,22 +321,22 @@ const HomePage:NextPage = () => {
           </div>
           <div className='flex flex-col items-center md:justify-center space-x-10 md:flex-row'>
             <div>
-              <Image src="/assets/images/acornzzi.png" height={256} width={256} alt='' />
+              <Image src="/assets/images/acornzzi.png" height={256} width={256} alt='' priority={true} />
               <p className='text-[24px] text-center text-white mt-3 font-ppagradirBold'>acornzzi</p>
               <p className='text-base text-center text-dark mt-3 font-ppagradir'>Artist</p>
             </div>
             <div>
-              <Image src="/assets/images/fr1nge.png" height={256} width={256} alt='' />
+              <Image src="/assets/images/fr1nge.png" height={256} width={256} alt='' priority={true} />
               <p className='text-[24px] text-center text-white mt-3 font-ppagradirBold'>fr1nge</p>
               <p className='text-base text-center text-dark mt-3 font-ppagradir'>Founder</p>
             </div>
             <div>
-              <Image src="/assets/images/kazi.png" height={256} width={256} alt='' />
+              <Image src="/assets/images/kazi.png" height={256} width={256} alt='' priority={true} />
               <p className='text-[24px] text-center text-white mt-3 font-ppagradirBold'>kazi</p>
               <p className='text-base text-center text-dark mt-3 font-ppagradir'>Digital Designer/Product</p>
             </div>
             <div>
-              <Image src="/assets/images/leon.png" height={256} width={256} alt='' />
+              <Image src="/assets/images/leon.png" height={256} width={256} alt='' priority={true} />
               <p className='text-[24px] text-center text-white mt-3 font-ppagradirBold'>Leon</p>
               <p className='text-base text-center text-dark mt-3 font-ppagradir'>Management</p>
             </div>

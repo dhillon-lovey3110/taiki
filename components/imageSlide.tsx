@@ -24,10 +24,10 @@ const ImageSlide = () => {
       <>
         <Slider {...settings}>
           <div>
-            <Image src="/assets/images/nfts.png" height={697} width={1780} className='pr-0' alt='' />
+            <Image src="/assets/images/nfts.png" height={697} width={1780} className='pr-0' alt='' priority={true} />
           </div>
           <div>
-            <Image src="/assets/images/nfts.png" height={697} width={1780} className='pr-0' alt='' />
+            <Image src="/assets/images/nfts.png" height={697} width={1780} className='pr-0' alt='' priority={true} />
           </div>
         </Slider>
       </>

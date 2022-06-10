@@ -244,9 +244,9 @@ const HomePage:NextPage = () => {
           <p className='text-base text-center font-ppagradir text-dark mb-14 font-ppagradir !text-[21px]'>The current tentative roadmap for Taiki Friends.</p>
           <div className='flex flex-col flex-1 h-full md:flex-row items-center md:justify-center md:space-x-[32px] mb-[32px]'>
             <div className='flex-1 w-full max-w-[36rem] content-center mb-[32px] md:mb-[0] bg-darkBlue rounded-[32px] relative overflow-hidden'>
-              <div className='bg-[#365685] p-5 m-12 mb-8 rounded-[32px] flex gap-7 align-middle'>
-                <div className='bg-darkBlue h-20 w-20 text-center pt-3 text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>1</div>
-                <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>X% of Mint Back into the Project</div>
+              <div className='bg-[#365685] p-5 m-12 mb-8 rounded-[32px] flex gap-3 sm:gap-7 align-middle'>
+                <div className='bg-darkBlue h-20 w-20 text-center flex justify-center items-center text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>1</div>
+                <div className='font-ppagradirBold max-w-[330px] flex items-center text-[14px] sm:text-[24px]'>X% of Mint Back into the Project</div>
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>After launch, a large sum of our mint capital will be refinanced back into our project to fund the future development of our roadmap.</p>
               <div className='absolute right-0 bottom-[-6px]'>
@@ -254,9 +254,9 @@ const HomePage:NextPage = () => {
               </div>
             </div>
             <div className='flex-1 w-full  h-full max-w-[36rem] content-center bg-darkGreen rounded-[32px] relative overflow-hidden'>
-              <div className='bg-[#397E40] p-5 m-12 mb-8 rounded-[32px] flex gap-7 align-middle'>
-                <div className='bg-[#256B2C] h-20 w-20 text-center pt-3 text-[40px] text-[32px] rounded-full font-ppagradirBold flex-shrink-0'>2</div>
-                <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>Untitled Points- Based Game</div>
+              <div className='bg-[#397E40] p-5 m-12 mb-8 rounded-[32px] flex gap-3 sm:gap-7 align-middle'>
+                <div className='bg-[#256B2C] h-20 w-20 text-center text-[40px] flex items-center justify-center rounded-full font-ppagradirBold flex-shrink-0'>2</div>
+                <div className='font-ppagradirBold max-w-[330px] flex items-center  text-[14px] sm:text-[24px]'>Untitled Points- Based Game</div>
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Let the games begin! Collect Taiki points to win rewards such as ultra-rare Taikis, Taiki-themed isometric web3 rooms, and so much more!</p>
               <div className='absolute right-0 bottom-[-6px]'>
@@ -268,10 +268,10 @@ const HomePage:NextPage = () => {
         <div className='mx-auto max-w-7xl relative mt-[32px] mb-12 px-4'>
         <div className='flex flex-col md:flex-row items-center md:justify-center md:space-x-[32px]'>
             <div className='flex-1 w-full max-w-[36rem] content-center mb-[32px] md:mb-[0] bg-darkRed rounded-[32px] relative overflow-hidden'>
-              <div className='bg-[#AA4537] p-5 m-12 mb-8 rounded-[32px] flex gap-7 align-middle'>
+              <div className='bg-[#AA4537] p-5 m-12 mb-8 rounded-[32px] flex gap-3 sm:gap-7 align-middle'>
                 {/* <div className='bg-[#9B1724] h-16 w-16 text-center pt-2 text-[32px] rounded-full font-ppagradirBold flex-shrink-0'>3</div> */}
-                <div className='bg-darkRed h-20 w-20 text-center pt-3 text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>3</div>
-                <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>Online Taiki Tamagotchi</div>
+                <div className='bg-darkRed h-20 w-20 text-center flex justify-center items-center text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>3</div>
+                <div className='font-ppagradirBold max-w-[330px] flex items-center text-[14px] sm:text-[24px]'>Online Taiki Tamagotchi</div>
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Bring back the nostalgia. Take care of your Taiki in his virtual tamagotchi space. Feed him lollipops, play catch, give him a shower. Trade items with others.</p>
               <div className='absolute right-0 bottom-[-6px]'>
@@ -279,9 +279,9 @@ const HomePage:NextPage = () => {
               </div>
             </div>
             <div className='flex-1 w-full max-w-[36rem] content-center bg-darkYellow rounded-[32px] relative overflow-hidden'>
-              <div className='bg-[#B39337] p-5 px-3 m-12 mb-8 rounded-[32px] flex gap-7 align-middle'>
-                <div className='bg-[#A17608] h-20 w-20 text-center pt-3 text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>4</div>
-                <div className='font-ppagradirBold max-w-[330px] pt-1 text-[24px]'>Taikiverse + Future Partnerships</div>
+              <div className='bg-[#B39337] p-5 px-3 m-12 mb-8 rounded-[32px] flex items-center gap-3 sm:gap-7 align-middle'>
+                <div className='bg-[#A17608] h-20 w-20 text-center flex items-center justify-center text-[40px] rounded-full font-ppagradirBold flex-shrink-0'>4</div>
+                <div className='font-ppagradirBold max-w-[330px] text-[14px] sm:text-[24px]'>Taikiverse + Future Partnerships</div>
               </div>
               <p className='px-12 text-[18px] leading-[36px] mb-14 font-ppagradir text-[#DBDBDB] relative z-10'>Dive into our web3 social community game where holders can gather to chat, listen to music, and play fun minigames together!</p>
               <div className='absolute right-0 bottom-[-6px]'>
